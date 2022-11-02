@@ -1,0 +1,42 @@
+.banner-size {
+  box-shadow: 1px 0px 5px 0px #4f4e4e;
+  width: 100%;
+  height: auto;
+}
+
+.banner-size--small {
+  font-size: 12px;
+  padding: 10px 16px;
+  width: 20%;
+  height: 200px;
+}
+.banner-size--medium {
+  font-size: 14px;
+  padding: 11px 20px;
+  width: 33.3300%;
+  height: 350px;
+
+}
+.banner-size--large {
+  font-size: 16px;
+  padding: 12px 24px;
+  width: 50%;
+  height: 500px;
+
+}
+
+.banner-size--x-large {
+  font-size: 20px;
+  padding: 12px 24px;
+  width: inherit;
+  height: auto;
+}
+
+
+.image-section {
+  width: 100%;
+  object-fit: cover;
+  height: 60%;
+  background-color: red;
+  display: flex;
+}
