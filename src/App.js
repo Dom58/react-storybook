@@ -1,18 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Header } from './stories/Header';
-import { Banner } from './stories/Banner';
+import { Banner } from './stories/banners/Banner';
+import { Separator } from './stories/separator/Separator';
 
 function App() {
   const [user, setUser] = React.useState();
   return (
     <div className="App">
       <Header user={user} onLogin={() => setUser({ name: 'Dom58' })}/>
-      
-      <Banner size={'medium'} backgroundColor='red'>
-        Hello There
-      </Banner>
+      <Separator size='medium' backgroundColor = 'red' />
+      <Banner 
+        size={'medium'} 
+        backgroundColor = 'white' 
+        imageUrl='https://www.inkling.com/wp-content/uploads/2021/06/SD-default-image.png'
+        content={'Hello There'}
+      />
     </div>
   );
 }

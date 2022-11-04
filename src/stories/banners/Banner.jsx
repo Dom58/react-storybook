@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './banner.css';
+import { Separator } from '../separator/Separator';
 
 /**
  * Primary UI component for user interaction
@@ -13,8 +14,10 @@ export const Banner = ({ backgroundColor, size, content, imageSection, imageUrl,
     {...props}
     >
       <div className='image-section'>
-        <img src= {imageUrl ? null : imageUrl } />
+        <img src= {imageUrl&&imageUrl ? imageUrl : null} className="image" />
       </div>
+
+      <Separator size='small' backgroundColor={'green'} />
       {content}
     </div>
   );

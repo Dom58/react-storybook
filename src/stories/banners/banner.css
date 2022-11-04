@@ -32,11 +32,19 @@
   height: auto;
 }
 
-
 .image-section {
   width: 100%;
-  object-fit: cover;
   height: 60%;
-  background-color: red;
-  display: flex;
+  /* background-color: red; */
+  /* display: flex; */
+}
+
+.image-section .image {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  height: 100%;
+  opacity: .9;
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 80px;
 }
