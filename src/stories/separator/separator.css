@@ -1,0 +1,24 @@
+.separator {
+    height: 1px;
+    /* background-color: red; */
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+.separator-size--small {
+    height: 1.5px;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.separator-size--medium {
+    height: 2px;
+    /* background-color: red; */
+    width: 100%;
+}
+
+.separator-size--huge {
+    height: 2.5px;
+    /* background-color: red; */
+    width: 100%;
+}
