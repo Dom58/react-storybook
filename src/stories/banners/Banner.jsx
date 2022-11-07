@@ -6,19 +6,32 @@ import { Separator } from '../separator/Separator';
 /**
  * Primary UI component for user interaction
  */
-export const Banner = ({ backgroundColor, size, content, imageSection, imageUrl, ...props }) => {
+export const Banner = ({ 
+    backgroundColor, 
+    size,
+    content,
+    imageUrl, 
+    children, 
+    check,
+    ...props
+  }) => {
   const mode = 'banner-size';
+  console.log('=====', props);
   return (
     <div style={backgroundColor && { backgroundColor }}
     className={['banner-size', `banner-size--${size}`, mode].join(' ')}
-    {...props}
+
     >
       <div className='image-section'>
         <img src= {imageUrl&&imageUrl ? imageUrl : null} className="image" />
       </div>
 
       <Separator size='small' backgroundColor={'green'} />
+      {props.content}
+      {JSON.stringify(check) }
+      {/* {JSON.stringify(props)} */}
       {content}
+      {children}
     </div>
   );
 };
